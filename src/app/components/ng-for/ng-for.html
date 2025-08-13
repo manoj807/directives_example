@@ -1,0 +1,44 @@
+<div class="ng-for-component">
+  <h2>NgFor for tutorials</h2>
+    
+  <button (click)="clearStudents()">clear Student</button>
+   <!-- <div class="list" *ngFor="let student of students">
+    <h1>{{ student.name }}</h1>
+     <h2>Phone: {{ student.phone }}</h2>
+     <p>Branch: {{ student.branch }}</p>
+ 
+    </div> -->
+
+    <table>
+       <thead> 
+        <tr>
+          <th>Index</th>  
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Branch</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr *ngFor=
+        "let student of students; 
+        let i=index
+        let last=last;
+        let first=first;
+        let odd=odd;
+        let even=even"
+        [ngClass]="{first:even, last:odd}"
+        >
+        <td>{{i}} </td>
+        <td>{{student.name}}</td>
+        <td>{{student.phone}}</td>
+        <td>{{student.branch}}</td>
+
+        </tr>
+       </tbody>
+    </table>    
+    
+
+
+ 
+  </div>
+

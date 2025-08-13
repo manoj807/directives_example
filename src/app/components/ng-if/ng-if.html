@@ -1,0 +1,41 @@
+<div>
+  <h2>NG if tutorials</h2>  
+  <input type="checkbox" (change)="changeState()"/>
+
+  <div *ngIf="active; else elseBlock">
+    <h3 style="color:green">Active is {{active}}</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet, facilis recusandae minus enim beatae rerum. Esse maiores doloremque perferendis! Repellendus rem voluptatibus minus nam vel facilis sit rerum porro.</p>
+
+  </div> 
+
+   <ng-template #elseBlock>
+     <h3 style="color:red">Active is {{active}}</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet, facilis recusandae minus enim beatae rerum. Esse maiores doloremque perferendis! Repellendus rem voluptatibus minus nam vel facilis sit rerum porro.</p>
+
+   </ng-template>z
+
+   <div>
+     @if (active) {
+    <h3 style="color:green">Active if and else  is {{active}}</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet, facilis recusandae minus enim beatae rerum. Esse maiores doloremque perferendis! Repellendus rem voluptatibus minus nam vel facilis sit rerum porro.</p>
+
+    }
+    @else
+    {
+       <h3 style="color:red">Active for if and else is {{active}}</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet, facilis recusandae minus enim beatae rerum. Esse maiores doloremque perferendis! Repellendus rem voluptatibus minus nam vel facilis sit rerum porro.</p>
+
+
+    }
+   </div> 
+
+    <div [hidden]="!active">
+      <h1 style="color:blue">this is hidden attibutes</h1>
+    </div>
+
+ 
+  
+
+
+
+</div>    

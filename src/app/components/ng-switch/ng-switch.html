@@ -1,0 +1,93 @@
+
+<div>
+    <h2> NG Switch tutorial</h2>
+
+    <!-- <div [ngSwitch]="ngSwitchValue">
+        <div *ngSwitchCase="1">One</div>
+        <div *ngSwitchCase="2">Two</div>
+        <div *ngSwitchCase="3">Three</div>
+        <div *ngSwitchDefault>Default Case</div>
+     </div> -->
+
+  <select [(ngModel)]="number" name="number">
+     <option [ngValue]="1">1</option>
+    <option [ngValue]="2">2</option>
+    <option [ngValue]="3">3</option>
+    <option [ngValue]="4">4</option>
+    <option [ngValue]="5">5</option>
+  </select>
+  
+
+
+
+  <div [ngSwitch]="number">
+    <div class="first" *ngSwitchCase="1">
+      <h2>One</h2>
+    </div>
+    <div class="first" *ngSwitchCase="2">
+      <h2>Two</h2>
+    </div>
+    <div class="first" *ngSwitchCase="3">
+      <h2>Three</h2>
+    </div>
+    <div class="first" *ngSwitchCase="4">
+      <h2>Four</h2>
+    </div>
+    <div class="first" *ngSwitchCase="5">
+      <h2>Five</h2>
+    </div>
+    <div class="first" *ngSwitchDefault>
+      <h2>Invalid Number selected</h2>
+    </div>
+  </div>
+
+  @switch (number) {
+    @case (1) {
+        <h2>One</h2>
+        }
+    @case (2) {
+        <h2>Two</h2>
+        }
+    @case (3) {
+        <h2>Three</h2>
+        }           
+    @case (4) {
+        <h2>Four</h2>
+        }
+    @case (5) {
+        <h2>Five</h2>
+        }
+    @default {
+        <h2>Invalid Number selected</h2>
+        }           
+  }
+
+
+
+
+
+  <div [ngSwitch]="day">
+    <div *ngSwitchCase="'Monday'">
+      <h1>This is monday</h1>
+    </div>
+    <div *ngSwitchCase="'Tuesday'">
+      <h1>This is tuesday</h1>
+    </div>
+    <div *ngSwitchDefault>no day selected</div>
+  </div>
+
+  @switch (day) {
+    @case ("Monday") {
+        <h1>This is monday</h1>
+    }
+    @case ("Tuesday") {
+        <h1>This is tuesday</h1>
+    }
+    @default {
+        <h1>no day selected</h1>
+    }
+  }
+    
+
+    
+</div>    

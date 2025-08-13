@@ -1,0 +1,30 @@
+div{
+    transition:  all 50ms linear;
+}
+
+.primary {
+ background-color: rgb(53, 183, 250);
+ width:80%;
+ height: 100px;
+border-radius: 4px;
+margin: auto;
+padding: 10px;
+
+}
+
+.secondary {
+    background-color: rgb(63, 250, 53);
+    width: 80%;
+    height: 100px;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px;
+}
+
+.fontStyle {
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bolder;
+    color:royalblue;
+
+}

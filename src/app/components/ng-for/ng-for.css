@@ -1,0 +1,56 @@
+.list
+{
+   border:1px solid #e2e2e2;
+   padding: 10px;
+   margin-bottom: 5px;
+;
+}
+
+table, td, th
+{
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.first{
+    background-color: bisque;
+}
+
+.list-item
+{
+    background-color: aqua;
+}
+
+
+.list{
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+table, td, th {
+  border: 1px solid;
+  padding: 10px 25px;
+}
+table{
+  border-collapse: collapse;
+}
+.first{
+  background-color: bisque;
+}
+
+.last{
+  background-color: aqua;
+}
